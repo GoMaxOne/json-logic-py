@@ -180,8 +180,8 @@ def jsonLogic(tests, data=None):
     data = data or {}
 
     operator = list(tests.keys())[0]
-    values = tests[operator]
 
+    values = tests[operator]
     # Easy syntax for unary operators, like {"var": "x"} instead of strict
     # {"var": ["x"]}
     if not isinstance(values, list) and not isinstance(values, tuple):
